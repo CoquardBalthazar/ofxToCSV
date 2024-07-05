@@ -1,4 +1,3 @@
-import subprocess
 from ofxparse import OfxParser
 import csv
 
@@ -55,8 +54,8 @@ def write_to_csv(data, csv_file_path):
 if __name__ == "__main__":
     
     # Replace 'input.ofx' and 'output.csv' with actual file paths
-    ofx_file_path = 'data/input.ofx'
-    csv_file_path = 'output.csv'
+    ofx_file_path = 'data/ofx/20240517-90j-Mai-2143295S0381715941104725.ofx'
+    csv_file_path = 'output/ConverterOFX_20240517-90j-Mai-2143295S0381715941104725.csv'
 
     # Step 1: Parse the OFX file
     parsed_data = parse_ofx(ofx_file_path)
